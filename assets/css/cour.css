@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/back.jpg) 
+    center/cover
+    no-repeat;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../images/back.jpg);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 75%;
+    margin: auto;
+    padding: 35px,0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 150px;
+    height: 110px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    height: 292px;
+    margin: 54px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    width: 313px;
+}
+img{
+    height: 300px;
+    width: 325px;
+    border-radius: 0px;
+}
+
+.intro{
+    height: 0px;
+    width: 313px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 220px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+   
+}
+
+h1{
+    margin: 8px;
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 300px;
+    bottom: 220px;
+    background: black;
+}
+
+.card:hover p{
+    opacity: 5;
+    visibility: visible;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* Position for the icon */
+    }
+    
+    button:hover {
+    background-color: #034081; /* Darker blue background on hover */
+    }
